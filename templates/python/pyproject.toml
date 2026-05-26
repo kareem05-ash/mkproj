@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "{{project_name}}"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "mypy>=1.9", "ruff>=0.4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
